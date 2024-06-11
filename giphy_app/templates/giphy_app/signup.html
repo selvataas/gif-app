@@ -1,0 +1,12 @@
+{% extends "giphy_app/base.html" %}
+
+{% block content %}
+<div class="centered">
+  <h3>Sign up</h3>
+  <form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+  </form>
+</div>
+{% endblock content %}

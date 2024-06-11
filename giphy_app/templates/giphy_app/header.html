@@ -1,0 +1,19 @@
+<header>
+  <nav>
+    <a href="/">Home</a>
+
+    <a href="{% url 'giphy_app:upload' %}" class="upload-btn">
+      Upload
+    </a>
+
+    {% if user.is_authenticated %}
+    <a href="{% url 'giphy_app:logout' %}">Logout</a>
+
+    {% else %}
+
+    <a href="{% url 'giphy_app:login' %}">Login</a>
+    <a href="{% url 'giphy_app:signup' %}">Signup</a>
+
+    {% endif %}
+  </nav>
+</header>

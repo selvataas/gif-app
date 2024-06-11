@@ -1,0 +1,12 @@
+.centered {
+    text-align: center;
+  }
+  
+  .helptext {
+    display: none;
+  }
+
+.upload-btn {
+    color: var(--accent) !important;
+    border-color: var(--accent) !important;
+  }
